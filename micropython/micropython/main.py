@@ -21,4 +21,4 @@ while True:
     print("Humidity: %0.1f %%" % humidity)
 
     led.value(0)
-    utime.sleep(15)
+    utime.sleep(5)

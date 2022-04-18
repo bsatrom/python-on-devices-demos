@@ -3,11 +3,11 @@ import time
 import adafruit_bme680
 import notecard
 
-productUID = "com.your-company.your-name:your_product"
+productUID = "com.blues.brandon.python-temp"
 
 i2c = board.I2C()
 sensor = adafruit_bme680.Adafruit_BME680_I2C(i2c)
-card = notecard.OpenI2C(port, 0, 0, debug = True)
+card = notecard.OpenI2C(i2c, 0, 0, debug = True)
 
 req = {"req": "hub.set"}
 req["product"] = productUID
